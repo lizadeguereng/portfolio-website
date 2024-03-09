@@ -1,0 +1,92 @@
+section{
+    margin-top: 8rem;
+    height: 200vh;
+}
+
+.experience__cont{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.experience__cont > div{
+    position: sticky;
+    left: 200px;
+    width: 500px;
+    background-color: var(--color-gray);
+    padding: 3rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transistion);
+}
+
+
+.experience__cont > div:hover{
+    background: var(--color-bg);
+    .experience-icon{
+        color: var(--color-secondary);
+    }
+
+    h3{
+        color: var(--color-secondary);
+    }
+}
+
+.experience__cont > div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.experience__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.experience__dts {
+    display: flex;
+    gap: 1rem;
+}
+
+.experience-icon {
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+
+
+/* meduim size devices */
+
+@media screen and (max-width: 1024px){
+    .experience__cont{
+        grid-template-columns: 1fr;
+    }
+
+    .experience__cont > div{
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+}
+
+/* small devices */
+@media screen and (max-width: 600px){
+    .about__me{
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .about__content{
+        text-align: center;
+    }
+
+    .about__content p {
+        margin: 1.5rem 0;
+    }
+}
